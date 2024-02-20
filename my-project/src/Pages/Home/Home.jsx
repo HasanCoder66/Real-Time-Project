@@ -3,6 +3,7 @@ import MobileNav from '../../Components/MobileNav/MobileNav';
 import Nav from '../../Components/Nav/Nav';
 import Hero from '../../Components/Hero/Hero';
 import ParticlesComp from '../../Components/Particles/Particles';
+import PackageSection from '../../Components/PackageIntroSection/PackageSection';
 
 const Home = () => {
     const [nav, setNav] = useState(false);
@@ -18,7 +19,7 @@ const Home = () => {
                 {/* <ParticlesComp /> */}
                 <Hero />
                 <div className="relative z-[30]" >
-                    {/* <About /> */}
+                    <PackageSection />
                     {/* <Services /> */}
                     {/* <Skills /> */}
                 </div>
