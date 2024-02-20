@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use loadAll, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use loadFull, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use loadSlim, install the "@tsparticles/slim" package too.
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use loadBasic, install the "@tsparticles/basic" package too.
+// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const ParticlesApp = () => {
     const [init, setInit] = useState(false);
@@ -43,12 +43,12 @@ const ParticlesApp = () => {
                     },
                     onHover: {
                         enable: true,
-                        mode: "repulse",
+                        mode: "connect",
                     },
                 },
                 modes: {
                     push: {
-                        quantity: 4,
+                        quantity: 10,
                     },
                     repulse: {
                         distance: 200,
@@ -74,14 +74,14 @@ const ParticlesApp = () => {
                         default: "bounce",
                     },
                     random: false,
-                    speed: 6,
+                    speed: 2,
                     straight: false,
                 },
                 number: {
                     density: {
                         enable: true,
                     },
-                    value: 80,
+                    value: 90,
                 },
                 opacity: {
                     value: 0.5,
