@@ -31,7 +31,7 @@ const ParticlesApp = () => {
         () => ({
             background: {
                 color: {
-                    value: "#0d47a1",
+                    // value: "#0d47a1",
                 },
             },
             fpsLimit: 120,

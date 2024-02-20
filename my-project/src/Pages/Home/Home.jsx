@@ -4,6 +4,8 @@ import Nav from '../../Components/Nav/Nav';
 import Hero from '../../Components/Hero/Hero';
 import ParticlesComp from '../../Components/Particles/Particles';
 import PackageSection from '../../Components/PackageIntroSection/PackageSection';
+import SectionTwo from '../../Components/SectionTwo/SectionTwo';
+// import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
     const [nav, setNav] = useState(false);
@@ -19,9 +21,11 @@ const Home = () => {
                 {/* <ParticlesComp /> */}
                 <Hero />
                 <div className="relative z-[30]" >
+                    <SectionTwo />
                     <PackageSection />
                     {/* <Services /> */}
                     {/* <Skills /> */}
+                    {/* <Footer /> */}
                 </div>
             </div>
         </div>
