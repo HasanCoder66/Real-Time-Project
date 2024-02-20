@@ -4,8 +4,8 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const PackageCard = () => {
     return (
         <>
-            <div className="bg-white rounded-lg transition-all ease-in-out duration-200 hover:shadow-md p-6 max-w-[500px] text-[#1e4649] text-left p-[50px]">
-                <div className='w-[100%] flex items-center justify-center mb-[20px]'>
+            <div className="bg-white rounded-lg transition-all ease-in-out duration-200 hover:shadow-md p-6 max-w-[500px] text-[#1e4649] text-left p-[50px] ">
+                <div className='w-[100%] flex items-center justify-center mb-[20px] '>
                     <img src="./images/Marketing-bro.svg" alt="" className='w-[266px] h-[266px]' />
                 </div>
                 <h2 className="text-3xl mb-2 font-medium">Digital Marketing</h2>
