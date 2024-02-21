@@ -5,6 +5,8 @@ import Hero from '../../Components/Hero/Hero';
 import ParticlesComp from '../../Components/Particles/Particles';
 import PackageSection from '../../Components/PackageIntroSection/PackageSection';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
+import SectionThree from '../../Components/SectionThree/SectionThree';
+import cardData from '../../Components/SectionThreeCard/cardData';
 // import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
@@ -23,6 +25,8 @@ const Home = () => {
                 <div className="relative z-[30]" >
                     <SectionTwo />
                     <PackageSection />
+                        <SectionThree />
+            
                     {/* <Services /> */}
                     {/* <Skills /> */}
                     {/* <Footer /> */}
