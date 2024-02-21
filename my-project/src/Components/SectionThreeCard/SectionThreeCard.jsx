@@ -2,12 +2,14 @@ import React from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import {  CardActionArea } from '@mui/material';
+// import Button from '../Button/Button'
+import ButtonTwo from '../Button/ButtonTwo';
 
 
 function SectionThreeCard({data}) {
   return (
-    <Card sx={{ maxWidth: 345,  }}>
+    <Card sx={{ maxWidth: 345, marginBottom: 5 }}>
       <CardActionArea>
         <CardContent className='text-center'>
           <Typography gutterBottom variant="h5" component="div" className='text-[#1e4649] ' >
@@ -17,6 +19,7 @@ function SectionThreeCard({data}) {
             {data?.desc}
           </Typography>
         </CardContent>
+      <ButtonTwo className='' text='Read More ' />
       </CardActionArea>
     </Card>
   );
