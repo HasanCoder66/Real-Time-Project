@@ -6,9 +6,8 @@ import ParticlesComp from '../../Components/Particles/Particles';
 import PackageSection from '../../Components/PackageIntroSection/PackageSection';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
-
 import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
-// import Footer from '../../Components/Footer/Footer';
+import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
     const [nav, setNav] = useState(false);
@@ -30,7 +29,7 @@ const Home = () => {
                     <WeSpecialize />
                     {/* <Services /> */}
                     {/* <Skills /> */}
-                    {/* <Footer /> */}
+                    <Footer />
                 </div>
             </div>
         </div>
