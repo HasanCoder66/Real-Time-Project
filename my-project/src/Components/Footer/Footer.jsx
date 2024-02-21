@@ -35,13 +35,13 @@ const Footer = () => {
 
                     <div className='center flex flex-col flex-1 px-[16px] justify-between px-[16px]'>
                         <p className='text-[18px] text-[#34afa9] mb-[10px]'>Services</p>
+                        <p className='text-[16px] cursor-pointer'>Web Design</p>
                         <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
-                        <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
-                        <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
-                        <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
-                        <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
-                        <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
-                        <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
+                        <p className='text-[16px] cursor-pointer'>Graphic Design</p>
+                        <p className='text-[16px] cursor-pointer'>AI</p>
+                        <p className='text-[16px] cursor-pointer'>Video Editing</p>
+                        {/* <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
+                        <p className='text-[16px] cursor-pointer'>Digital Marketing</p> */}
                     </div>
                     <div className='right px-[16px] flex-1 px-[16px]'>
                         <p className='text-[18px] text-[#34afa9] mb-[10px]'>Find Us</p>
@@ -57,28 +57,29 @@ const Footer = () => {
                             <PhoneIcon />
                             <span>Contact Us</span>
                         </div>
-                        <p>0334-1234567</p>
+                        <p>(507) 623-2311
+</p>
                     </div>
                     <div className="center flex-1 px-[16px]">
                         <div className="flex text-[#34afa9] gap-[5px] items-center mb-[15px]">
                             <AlternateEmailIcon />
                             <span>Email Us</span>
                         </div>
-                        <p>abcd@mail.com</p>
+                         <a>Info@webdeezien.com</a>
                     </div>
                     <div className="right flex-1 px-[16px]">
                         <div className="flex text-[#34afa9] gap-[5px] items-center mb-[15px]">
                             <LocationOnIcon />
                             <span>Address</span>
                         </div>
-                        <p>This is my address</p>
+                        <p>6605 NW 121st Street Oklahoma City, Ok. 73162</p>
                     </div>
                 </div>
             </div>
 
             <div className='py-[20px] flex'>
                 <div className='mx-auto text-white'>
-                    Design Nox © 2022 All Rights Reserved
+                webdeezien © 2024 All Rights Reserved
                 </div>
                 <div className='mx-auto text-[grey]'>
                     Terms & Conditions

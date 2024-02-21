@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = () => {
+const Button = ({text}) => {
   return (
-    <div class="w-full h-[40] flex items-center md:ml-[8rem] cursor-pointer">
+    <div class="w-full h-[40] flex items-center md:ml-[8rem] cursor-pointer mb-[3rem]">
       <div class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-yellow-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 dark:bg-gray-700 dark:text-white dark:hover:text-gray-200 dark:shadow-none group">
         <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-yellow-600 group-hover:h-full"></span>
         <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
@@ -38,7 +38,7 @@ const Button = () => {
           </svg>
         </span>
         <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200">
-          Talk to an Expert
+          {text}
         </span>
       </div>
     </div>
