@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 const Hero = () => {
   return (
     // bg-[url("/images/banner.jpg")]
-    <div className='h-[88vh] bg-[url("/images/banner.jpg")]  mt-[10vh] bg-cover bg-center bg-[#18252b] '>
+    <div className='h-[88vh] bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1708534584/branding%20hopes/banner_b0pbcx.jpg")]  mt-[10vh] bg-cover bg-center bg-[#18252b] '>
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center ">
         <div>
