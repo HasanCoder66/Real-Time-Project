@@ -26,9 +26,8 @@ const Home = () => {
                 <div className="relative z-[30]" >
                     <SectionTwo />
                     <PackageSection />
-                        <SectionThree />
-                        <WeSpecialize />
-            
+                    <SectionThree />
+                    <WeSpecialize />
                     {/* <Services /> */}
                     {/* <Skills /> */}
                     {/* <Footer /> */}
