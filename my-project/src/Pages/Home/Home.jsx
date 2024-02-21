@@ -6,7 +6,8 @@ import ParticlesComp from '../../Components/Particles/Particles';
 import PackageSection from '../../Components/PackageIntroSection/PackageSection';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
-import cardData from '../../Components/SectionThreeCard/cardData';
+
+import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
 // import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
                     <SectionTwo />
                     <PackageSection />
                     <SectionThree />
+                    <WeSpecialize />
                     {/* <Services /> */}
                     {/* <Skills /> */}
                     {/* <Footer /> */}
