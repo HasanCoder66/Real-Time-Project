@@ -1,5 +1,6 @@
 import React from 'react'
 import { XMarkIcon } from "@heroicons/react/20/solid";
+import DropdownMenu from '../Dropdown/Dropdown';
 
 const MobileNav = ({ nav, closeNav }) => {
   // const navAnimated = nav? 'block' : 'hidden'
@@ -10,7 +11,7 @@ const MobileNav = ({ nav, closeNav }) => {
     <div className={`fixed ${navAnimated}  transform transition-all duration-300 top-0 bottom-0 left-0 right-0 z-[1000000] bg-[#18252b]`}>
       <div className="flex z-[1000000] flex-col w-[100vw] h-[100vh] justify-center items-center">
         <div className="nav-link-mobile">Home</div>
-        <div className="nav-link-mobile">Service</div>
+        <div className="nav-link-mobile"><DropdownMenu /></div>
         <div className="nav-link-mobile">About</div>
         <div className="nav-link-mobile">Portfolio</div>
         <div className="nav-link-mobile">Contact</div>

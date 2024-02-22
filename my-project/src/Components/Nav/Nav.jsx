@@ -1,7 +1,8 @@
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import React from "react";
 import "../../App.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import DropdownMenu from "../Dropdown/Dropdown";
 
 const Nav = ({ openNav }) => {
   return (
@@ -16,9 +17,12 @@ const Nav = ({ openNav }) => {
         <Link to="/">
           <div className="nav-link">Home</div>
         </Link>
-        <Link>
+        {/* <Link>
           <div className="nav-link">Services</div>
-        </Link>
+        </Link> */}
+
+        <div className="nav-link"><DropdownMenu /></div>
+
 
         <Link to='/about'>
           <div className="nav-link">About</div>
