@@ -7,6 +7,7 @@ import ContactPage from "./Pages/ContactPage/ContactPage";
 import { useState } from "react";
 import MobileNav from "./Components/MobileNav/MobileNav";
 // import SectionTwo from "./Components/SectionTwo/SectionTwo";
+import Service from "./Pages/ServicesPage/Service";
 
 const Layout = () => {
   const [nav, setNav] = useState(false);
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/Contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/services",
+        element: <Service />,
       },
     ],
   },
