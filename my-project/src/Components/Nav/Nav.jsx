@@ -17,13 +17,7 @@ const Nav = ({ openNav }) => {
         <Link to="/">
           <div className="nav-link">Home</div>
         </Link>
-        <Link to='/services'>
-          <div className="nav-link">Services</div>
-        </Link> 
-
         <div className="nav-link"><DropdownMenu /></div>
-
-
         <Link to='/about'>
           <div className="nav-link">About</div>
         </Link>
