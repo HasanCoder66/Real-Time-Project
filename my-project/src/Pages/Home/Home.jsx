@@ -10,15 +10,12 @@ import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
 import AboutCmp from '../../Components/AboutCmp/AboutCmp';
 
 const Home = () => {
-    const [nav, setNav] = useState(false);
-    const openNav = () => setNav(true);
-    const closeNav = () => setNav(false);
+    
     return (
         <div className="overflow-x-hidden">
             <div>
                 {/* NAVBAR ===> */}
-                <MobileNav nav={nav} closeNav={closeNav} />
-                <Nav openNav={openNav} />
+                
                 {/* HERO ===> */}
                 {/* <ParticlesComp /> */}
                 <Hero />
