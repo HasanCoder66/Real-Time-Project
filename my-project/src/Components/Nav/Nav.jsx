@@ -17,9 +17,9 @@ const Nav = ({ openNav }) => {
         <Link to="/">
           <div className="nav-link">Home</div>
         </Link>
-        {/* <Link>
+        <Link to='/services'>
           <div className="nav-link">Services</div>
-        </Link> */}
+        </Link> 
 
         <div className="nav-link"><DropdownMenu /></div>
 
@@ -33,7 +33,8 @@ const Nav = ({ openNav }) => {
         <Link to='/Contact'>
           <div className="nav-link">Contact</div>
         </Link>
-        <div className="nav-link">Toll Free</div>
+        <Link to='/GetConsultancy'>
+        <div className="nav-link">Toll Free</div></Link>
         <div onClick={openNav}>
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] text-yellow-300 cursor-pointer " />
         </div>
