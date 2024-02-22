@@ -1,5 +1,6 @@
 import React from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
+import DropdownMenu from '../Dropdown/Dropdown';
 import { Link } from "react-router-dom";
 
 const MobileNav = ({ nav, closeNav }) => {
@@ -17,11 +18,9 @@ const MobileNav = ({ nav, closeNav }) => {
             Home
           </div>
         </Link>
-        <Link to="/services">
-          <div className="nav-link-mobile" onClick={closeNav}>
-            Service
-          </div>
-        </Link>
+        <div className="nav-link-mobile">
+          <DropdownMenu closeNav={closeNav} />
+        </div>
 
         <Link to="/about">
           <div className="nav-link-mobile" onClick={closeNav}>
