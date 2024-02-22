@@ -23,7 +23,7 @@ const GetConsultant = () => {
           <TextareaCmp />
           </div>
           <div className="right flex-1 flex justify-start items-center mt-[2rem]">
-                        <button className='py-[17px] px-[39px] bg-[#34afa9]  hover:text-white font-bold'>Submit</button>
+                        <button className='py-[17px] px-[39px]  bg-[#34afa9]  hover:text-white font-bold'>Submit</button>
                     </div>
         </div>
     </div>

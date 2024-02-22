@@ -1,28 +1,47 @@
-import React from 'react'
+import React from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const MobileNav = ({ nav, closeNav }) => {
   // const navAnimated = nav? 'block' : 'hidden'
-  const navAnimated = nav ? 'translate-x-0' : 'translate-x-[-100%]'
+  const navAnimated = nav ? "translate-x-0" : "translate-x-[-100%]";
   // console.log(nav);
   // console.log(navAnimated);
   return (
-    <div className={`fixed ${navAnimated}  transform transition-all duration-300 top-0 bottom-0 left-0 right-0 z-[1000000] bg-[#18252b]`}>
+    <div
+      className={`fixed ${navAnimated}  transform transition-all duration-300 top-0 bottom-0 left-0 right-0 z-[1000000] bg-[#18252b]`}
+    >
       <div className="flex z-[1000000] flex-col w-[100vw] h-[100vh] justify-center items-center">
-       <Link to='/'>
-       <div className="nav-link-mobile">Home</div></Link>
-       <Link to='/services'>
-        <div className="nav-link-mobile">Service</div></Link>
-        
-        <Link to='/about'>
-        <div className="nav-link-mobile">About</div></Link>
-        <Link to=''></Link>
-        <div className="nav-link-mobile">Portfolio</div>
-        <Link to='/contact'>
-        <div className="nav-link-mobile">Contact</div></Link>
-        <Link to='/GetConsultancy'>
-        <div className="nav-link-mobile">Toll Free</div></Link>
+        <Link to="/">
+          <div className="nav-link-mobile" onClick={closeNav}>
+            Home
+          </div>
+        </Link>
+        <Link to="/services">
+          <div className="nav-link-mobile" onClick={closeNav}>
+            Service
+          </div>
+        </Link>
+
+        <Link to="/about">
+          <div className="nav-link-mobile" onClick={closeNav}>
+            About
+          </div>
+        </Link>
+        <Link to=""></Link>
+        <div className="nav-link-mobile" onClick={closeNav}>
+          Portfolio
+        </div>
+        <Link to="/contact">
+          <div className="nav-link-mobile" onClick={closeNav}>
+            Contact
+          </div>
+        </Link>
+        <Link to="/GetConsultancy">
+          <div className="nav-link-mobile" onClick={closeNav}>
+            Toll Free
+          </div>
+        </Link>
       </div>
       <div
         onClick={closeNav}

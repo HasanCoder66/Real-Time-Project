@@ -35,8 +35,7 @@ const Textarea = styled(BaseTextareaAutosize)(
   font-weight: 400;
   line-height: 1.5;
   padding: 8px 12px;
-  color: ${theme.palette.mode === "dark" ? grey[300] : grey[900]};
-  background: rgb(52 175 169);
+  color: black ;
   border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
   box-shadow: 0px 2px 2px ${
     theme.palette.mode === "dark" ? grey[900] : grey[50]
@@ -66,6 +65,7 @@ const Textarea = styled(BaseTextareaAutosize)(
       aria-label="minimum height"
       minRows={3}
       placeholder="Enter Your Text here"
+      // className="text-white"
     />
   );
 }
