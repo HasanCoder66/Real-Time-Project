@@ -16,7 +16,7 @@ const Nav = ({ openNav }) => {
         <Link to="/">
           <div className="nav-link">Home</div>
         </Link>
-        <Link>
+        <Link to='/services'>
           <div className="nav-link">Services</div>
         </Link>
 
