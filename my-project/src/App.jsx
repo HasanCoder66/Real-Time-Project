@@ -1,4 +1,11 @@
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Nav from "./Components/Nav/Nav";
@@ -21,6 +28,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/Home",
         element: <Home />,
       },
       {
