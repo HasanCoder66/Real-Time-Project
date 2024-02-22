@@ -29,7 +29,8 @@ const Nav = ({ openNav }) => {
         <Link to='/Contact'>
           <div className="nav-link">Contact</div>
         </Link>
-        <div className="nav-link">Toll Free</div>
+        <Link to='/GetConsultancy'>
+        <div className="nav-link">Toll Free</div></Link>
         <div onClick={openNav}>
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] text-yellow-300 cursor-pointer " />
         </div>
