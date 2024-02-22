@@ -33,7 +33,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className='center flex flex-col flex-1 px-[16px] justify-between px-[16px]'>
+                    <div className='center flex flex-col flex-1 px-[16px] justify-between '>
                         <p className='text-[18px] text-[#34afa9] mb-[10px]'>Services</p>
                         <p className='text-[16px] cursor-pointer'>Web Design</p>
                         <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                         {/* <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
                         <p className='text-[16px] cursor-pointer'>Digital Marketing</p> */}
                     </div>
-                    <div className='right px-[16px] flex-1 px-[16px]'>
+                    <div className='right px-[16px] flex-1'>
                         <p className='text-[18px] text-[#34afa9] mb-[10px]'>Find Us</p>
                         <div className="map">
                             Map Here
