@@ -14,7 +14,7 @@ const GetConsultant = () => {
           <p className="mt-[1.5rem] text-[20px] text-[#ffffff]">
           We have experts available to provide guidance for you.
           </p>
-          <div className='flex justify-between mt-[2rem] gap-5'>
+          <div className='flex  mt-[2rem] gap-5'>
           <InputCmp type='text' label='Enter Your Name'/>
           <InputCmp type='Number' label='Enter Your Number' />
           <InputCmp type='email' label='Enter Your email'/>

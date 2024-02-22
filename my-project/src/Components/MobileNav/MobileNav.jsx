@@ -21,7 +21,8 @@ const MobileNav = ({ nav, closeNav }) => {
         <div className="nav-link-mobile">Portfolio</div>
         <Link to='/contact'>
         <div className="nav-link-mobile">Contact</div></Link>
-        <div className="nav-link-mobile">Toll Free</div>
+        <Link to='/GetConsultancy'>
+        <div className="nav-link-mobile">Toll Free</div></Link>
       </div>
       <div
         onClick={closeNav}
