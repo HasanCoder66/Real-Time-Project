@@ -1,12 +1,6 @@
 import React from 'react'
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
-// interface Props {
-//   nav: boolean;
-//   closeNav: () => void;
-// }
-
-// :Props
 const MobileNav = ({ nav, closeNav }) => {
   // const navAnimated = nav? 'block' : 'hidden'
   const navAnimated = nav ? 'translate-x-0' : 'translate-x-[-100%]'

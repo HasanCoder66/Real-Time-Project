@@ -1,5 +1,5 @@
 .btn {
-  color: green;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   width: 100%;
@@ -14,7 +14,7 @@
 }
 
 .btn:hover {
-  color: greenyellow;
+  color: yellow;
   border: 2px solid yellow;
 }
 
@@ -26,7 +26,7 @@
   top: 0;
   left: -40px;
   transform: skewX(45deg);
-  background-color: yellow;
+  background-color: white;
   z-index: -1;
   transition: all 1s;
 }

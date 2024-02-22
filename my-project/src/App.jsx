@@ -2,14 +2,14 @@ import {
   createBrowserRouter,
   RouterProvider,
   Outlet,
-  BrowserRouter,
-  Route,
-  Routes,
+
 } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import Nav from "./Components/Nav/Nav";
-import SectionTwo from "./Components/SectionTwo/SectionTwo";
+import About from './Pages/AboutPage/About'
+import ContactPage from "./Pages/ContactPage/ContactPage";
+// import SectionTwo from "./Components/SectionTwo/SectionTwo";
 
 const Layout = () => {
   return (
@@ -36,7 +36,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/About",
-        element: <SectionTwo />,
+        element: <About />,
+      },
+      {
+        path: "/Contact",
+        element: <ContactPage />,
       },
     ],
   },
