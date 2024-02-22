@@ -7,7 +7,7 @@ import PackageSection from '../../Components/PackageIntroSection/PackageSection'
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
 import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
-import AboutCmp from '../../Components/AboutCmp/AboutCmp';
+// import AboutCmp from '../../Components/AboutCmp/AboutCmp';
 
 const Home = () => {
     const [nav, setNav] = useState(false);
@@ -27,7 +27,7 @@ const Home = () => {
                     <PackageSection />
                     <SectionThree />
                     <WeSpecialize />
-                    <AboutCmp />
+                    {/* <AboutCmp /> */}
                     {/* <Services /> */}
                     {/* <Skills /> */}
                 </div>
