@@ -22,18 +22,18 @@ function DropdownMenu({ closeNav }) {
                     onMouseLeave={handleMouseLeave}
                 >
                     <li className="hover:bg-gray-100 px-4 py-2" onClick={closeNav}>
-                        <Link to='/services'>
-                            Option 1
+                        <Link to='/services/logo'>
+                            Logo Packages
                         </Link>
                     </li>
                     <li className="hover:bg-gray-100 px-4 py-2" onClick={closeNav}>
-                        <Link to='/services'>
-                            Option 2
+                        <Link to='/services/web'>
+                            Website Packages
                         </Link>
                     </li>
                     <li className="hover:bg-gray-100 px-4 py-2" onClick={closeNav}>
-                        <Link to='/services'>
-                            Option 3
+                        <Link to='/services/ecommerce'>
+                            E-Commerce Packages
                         </Link>
                     </li>
                 </ul>
