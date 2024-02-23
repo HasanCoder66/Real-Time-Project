@@ -7,6 +7,7 @@ import PackageSection from '../../Components/PackageIntroSection/PackageSection'
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
 import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
+import GetConsultant from '../../Components/GetConsultant/GetConsultant';
 // import AboutCmp from '../../Components/AboutCmp/AboutCmp';
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
                     <PackageSection />
                     <SectionThree />
                     <WeSpecialize />
+                    <GetConsultant />
                     {/* <AboutCmp /> */}
                     {/* <Services /> */}
                     {/* <Skills /> */}
