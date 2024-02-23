@@ -46,7 +46,7 @@ const Footer = () => {
                     <div className='right px-[16px] flex-1'>
                         <p className='text-[18px] text-[#34afa9] mb-[10px]'>Find Us</p>
                         <div className="map">
-                            Map Here
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.354153042275!2d-97.63327272475347!3d35.594329634743694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2035dabef00bb%3A0xa5f7eb1a20a89c35!2s6605%20NW%20121st%20St%2C%20Oklahoma%20City%2C%20OK%2073162%2C%20USA!5e0!3m2!1sen!2s!4v1708673658507!5m2!1sen!2s" width="250" height="250" style={{ border: "0px", borderRadius: "10px" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -58,14 +58,14 @@ const Footer = () => {
                             <span>Contact Us</span>
                         </div>
                         <p>(507) 623-2311
-</p>
+                        </p>
                     </div>
                     <div className="center flex-1 px-[16px]">
                         <div className="flex text-[#34afa9] gap-[5px] items-center mb-[15px]">
                             <AlternateEmailIcon />
                             <span>Email Us</span>
                         </div>
-                         <a>Info@webdeezien.com</a>
+                        <a>Info@webdeezien.com</a>
                     </div>
                     <div className="right flex-1 px-[16px]">
                         <div className="flex text-[#34afa9] gap-[5px] items-center mb-[15px]">
@@ -79,7 +79,7 @@ const Footer = () => {
 
             <div className='py-[20px] flex'>
                 <div className='mx-auto text-white'>
-                webdeezien © 2024 All Rights Reserved
+                    webdeezien © 2024 All Rights Reserved
                 </div>
                 <div className='mx-auto text-[grey]'>
                     Terms & Conditions
