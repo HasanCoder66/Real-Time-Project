@@ -3,28 +3,34 @@ import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SmsOutlinedIcon from '@mui/icons-material/SmsOutlined';
 
-const ServiceCard = () => {
+const ServiceCard = ({ data }) => {
+
+    // console.log(data, "=====>>>> data from crad")
+
+    const { desc } = data
+
+    // console.log(desc)
+
     return (
         <div className='SCradContainer rounded-xl border-2 border-[#34afa9] max-w-[400px] mt-[15px] me-[15px] mb-[15px] hover:scale-[1.05] transition-all ease-in-out duration-300'>
             <div className="SCardWrapper">
                 <div className="title text-center py-[10px] px-[20px]">
-                    <div className='text-white text-[12px] font-bold'>BASIC LOGO</div>
+                    <div className='text-white text-[12px] font-bold'>{data?.title}</div>
                     <div className='text-white text-[12px] font-bold'>PACKAGE</div>
                     <div className='text-[#b3b3b3] text-[12px] my-[5px]'>
                         Suitable for potential super-startups and brand revamps for companies.
                     </div>
                 </div>
                 <div className="price flex items-center justify-center">
-                    <p className='text-[50px] font-bold text-transparent' style={{ WebkitTextStroke: "1px #34afa9" }}>$34.99</p>
+                    <p className='text-[50px] font-bold text-transparent' style={{ WebkitTextStroke: "1px #34afa9" }}>{`$${data?.price}`}</p>
                 </div>
                 <div className="desc py-[16px] pe-[10px]">
                     <ul className='px-[25px] text-[#818181]'>
-                        <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#34afa9]' />3 Logo Design Concepts</li>
-                        <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#34afa9]' />3 Logo Design Concepts</li>
-                        <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#34afa9]' />3 Logo Design Concepts</li>
-                        <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#34afa9]' />3 Logo Design Concepts</li>
-                        <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#34afa9]' />3 Logo Design Concepts</li>
-                        <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#34afa9]' />3 Logo Design Concepts</li>
+                        {
+                            desc.map((data)=> (
+                                <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#34afa9]' />{data}</li>
+                            ))
+                        }
                     </ul>
                 </div>
                 <div className="assurance flex items-center justify-center gap-[10px] text-white bg-[#34afa9] py-[10px] px-[38px]">
