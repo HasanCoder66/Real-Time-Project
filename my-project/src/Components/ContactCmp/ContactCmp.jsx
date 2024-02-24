@@ -1,5 +1,6 @@
 import React from 'react'
 import './ContactCmp.css'
+import MapLocation from '../MapLocation/MapLocation'
 const ContactCmp = () => {
   return (
     <div className='flex justify-evenly w-full md-flex-row mt-[4.5rem] bg-black p-[20px] sm:flex-row flex-col'>
@@ -31,7 +32,9 @@ const ContactCmp = () => {
    <p  className='text-1xl font-semibold  text-white mb-[2rem]'>(507) 623-2311</p>
    <p  className='text-1xl font-semibold  text-white mb-[2rem] overflow-auto'>6605 NW 121st Street Oklahoma City, Ok. 73162</p>
    <p  className='text-1xl font-semibold  text-white mb-[2rem]'>Find Us</p>
-   <div className='bg-white w-[300px] h-[300px] mx-auto rounded-md'></div>
+   <div className=' flex justify-center  rounded-md'>
+   <MapLocation />
+   </div>
     </div>
 </div>
 </div>

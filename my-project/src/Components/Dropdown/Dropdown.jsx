@@ -18,10 +18,10 @@ function DropdownMenu({ closeNav }) {
             </button>
             {isOpen && (
                 <ul
-                    className="absolute text-black z-10 bg-white rounded shadow w-48 mt-2 py-2 "
+                    className="absolute text-black z-10 bg-white rounded shadow w-48 mt-2 py-2 text-[15px] "
                     onMouseLeave={handleMouseLeave}
                 >
-                    <li className="hover:bg-gray-100 px-4 py-2" onClick={closeNav}>
+                    <li className="hover:bg-gray-100 px-4 py-2 " onClick={closeNav}>
                         <Link to='/services/logo'>
                             Logo Packages
                         </Link>
