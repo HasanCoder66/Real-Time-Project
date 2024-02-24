@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="footerWrapper py-[95px] px-[46px] text-white flex flex-col gap-[40px] ">
                 <div className='flex p-[10px] lg:flex-row md:flex-col sm:flex-col'>
                     <div className="left flex-1 px-[16px]">
-                        <h1 className='text-[46px] font-normal'>Let’s Build Your Next Digital Product</h1>
+                        <h1 className='text-[46px] font-normal '>Let’s Build Your Next Digital Product</h1>
                         <p className='text-[23px] font-light text-[#34afa9]'>Turn your ideas into reality in just a span of 4-12 weeks! Kickstart your project with us now and revamp your results.</p>
                     </div>
                     <div className="right flex-1 flex justify-end items-center px-[16px]">
@@ -39,6 +39,7 @@ const Footer = () => {
                         <p className='text-[16px] cursor-pointer'>Web Design</p>
                         <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
                         <p className='text-[16px] cursor-pointer'>Graphic Design</p>
+                        <p className='text-[16px] cursor-pointer'>AI</p>
                         <p className='text-[16px] cursor-pointer'>Video Editing</p>
                         {/* <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
                         <p className='text-[16px] cursor-pointer'>Digital Marketing</p> */}
@@ -46,7 +47,9 @@ const Footer = () => {
                     <div className='right px-[16px] flex-1'>
                         <p className='text-[18px] text-[#34afa9] mb-[10px]'>Find Us</p>
                         <MapLocation />
-                       
+                        {/* <div className="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.354153042275!2d-97.63327272475347!3d35.594329634743694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2035dabef00bb%3A0xa5f7eb1a20a89c35!2s6605%20NW%20121st%20St%2C%20Oklahoma%20City%2C%20OK%2073162%2C%20USA!5e0!3m2!1sen!2s!4v1708673658507!5m2!1sen!2s" width="250" height="250" style={{ border: "0px", borderRadius: "10px" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div> */}
                     </div>
                 </div>
 

@@ -4,7 +4,7 @@ import TextareaCmp from "../TextAreaCmp/TextAreaCmp";
 
 const GetConsultant = () => {
   return (
-    <div className='p-[5rem] pr-[5rem] h-[88vh] bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1708534584/branding%20hopes/banner_b0pbcx.jpg")]  mt-[10vh] bg-cover bg-center bg-[#18252b] '>
+    <div className='p-[5rem] pr-[5rem] h-[100vh] bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1708534584/branding%20hopes/banner_b0pbcx.jpg")]  pt-[12vh] bg-cover bg-center bg-[#18252b] '>
       <div>
         <h1 className="text-[35px] md:text-[50px] text-yellow-300  font-bold ">
           Get

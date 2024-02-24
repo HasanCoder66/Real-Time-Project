@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import MobileNav from '../../Components/MobileNav/MobileNav';
-import Nav from '../../Components/Nav/Nav';
+// import MobileNav from '../../Components/MobileNav/MobileNav';
+// import Nav from '../../Components/Nav/Nav';
 import Hero from '../../Components/Hero/Hero';
-import ParticlesComp from '../../Components/Particles/Particles';
+// import ParticlesComp from '../../Components/Particles/Particles';
 import PackageSection from '../../Components/PackageIntroSection/PackageSection';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
 import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
 import GetConsultant from '../../Components/GetConsultant/GetConsultant';
+
 // import AboutCmp from '../../Components/AboutCmp/AboutCmp';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
                 
                 {/* HERO ===> */}
                 {/* <ParticlesComp /> */}
+                
                 <Hero />
                 <div className="relative z-[30]" >
                     <SectionTwo />
