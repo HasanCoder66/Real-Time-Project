@@ -24,13 +24,13 @@ const ParticlesApp = () => {
     }, []);
 
     const particlesLoaded = useCallback((container) => {
-        console.log(container);
+        // console.log(container);
     }, []);
 
     const options = {
         background: {
             color: {
-                // value: "#0d47a1",
+                value: "transparent",
             },
         },
         fpsLimit: 60,
