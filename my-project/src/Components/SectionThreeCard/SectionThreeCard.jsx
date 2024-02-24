@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import {  CardActionArea } from '@mui/material';
 // import Button from '../Button/Button'
-import ButtonTwo from '../Button/ButtonTwo';
+import Button from '../Button/Button';
 
 
 function SectionThreeCard({data}) {
@@ -12,14 +12,14 @@ function SectionThreeCard({data}) {
     <Card sx={{ maxWidth: 345, marginBottom: 5 }}>
       <CardActionArea>
         <CardContent className='text-center'>
-          <Typography gutterBottom variant="h5" component="div" className='text-[#1e4649] ' >
+          <Typography gutterBottom variant="h5" component="div" className='text-[#097969] ' >
             {data?.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" >
             {data?.desc}
           </Typography>
         </CardContent>
-      <ButtonTwo className='' text='Read More ' />
+      <Button className='' text='Read More ' />
       </CardActionArea>
     </Card>
   );

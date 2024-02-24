@@ -17,7 +17,7 @@ const Hero = () => {
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-light ">
             WE ARE A RESULT-DRIVEN{" "}
-            <span className="text-[#34afa9]"> WEBSITE</span> COMPANY!
+            <span className="text-[#FDDA0D] "> WEBSITE</span> COMPANY!
           </h1>
           {/* <TextEffect /> */}
           <p className="mt-[1.5rem] text-[20px] text-[#ffffff]">
