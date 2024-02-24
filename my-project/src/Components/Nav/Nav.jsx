@@ -8,7 +8,7 @@ const Nav = ({ openNav }) => {
   return (
     <div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#18252b] shadow-md">
       <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
-        <h1 className="flex-[0.6] cursor-pointer text-[25px] font-bold text-[##097969] ">
+        <h1 className="flex-[0.6] cursor-pointer text-[25px] font-bold text-[#097969] ">
           web
           <span className=" text-[25px] hover:text-[#FDDA0D]">
             deezien
@@ -28,7 +28,7 @@ const Nav = ({ openNav }) => {
           <div className="nav-link">Contact</div>
         </Link>
         <Link to='/GetConsultancy'>
-        <div className="nav-link">Toll Free</div></Link>
+          <div className="nav-link">Toll Free</div></Link>
         <div onClick={openNav}>
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] text-yellow-300 cursor-pointer " />
         </div>
