@@ -7,22 +7,23 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MapLocation from '../MapLocation/MapLocation';
+import "./Footer.css"
 
 const Footer = () => {
     return (
-        <div className='footer bg-[#18252b]'>
+        <div className='footer bg-[#18252b] z-[10]'>
             <div className="footerWrapper py-[95px] px-[46px] text-white flex flex-col gap-[40px] ">
-                <div className='flex p-[10px] lg:flex-row md:flex-col sm:flex-col'>
+                <div className='flex p-[10px] lg:flex-row md:flex-col sm:flex-col topBox'>
                     <div className="left flex-1 px-[16px]">
-                        <h1 className='text-[46px] font-normal '>Let’s Build Your Next Digital Product</h1>
-                        <p className='text-[23px] font-light text-[#34afa9]'>Turn your ideas into reality in just a span of 4-12 weeks! Kickstart your project with us now and revamp your results.</p>
+                        <h1 className='text-[46px] font-normal digitalText'>Let’s Build Your Next Digital Product</h1>
+                        <p className='text-[23px] font-light text-[#34afa9] digitalText2'>Turn your ideas into reality in just a span of 4-12 weeks! Kickstart your project with us now and revamp your results.</p>
                     </div>
                     <div className="right flex-1 flex justify-end items-center px-[16px]">
                         <button className='py-[17px] px-[39px] bg-[#34afa9] font-bold'>Talk to an Expert</button>
                     </div>
                 </div>
 
-                <div className='p-[10px] flex lg:flex-row md:flex-col sm:flex-col '>
+                <div className='p-[10px] flex lg:flex-row md:flex-col sm:flex-col midBox'>
                     <div className='left flex flex-col flex-1 gap-[15px] px-[16px]'>
                         <h1 className='text-[46px]'>LOGO HERE</h1>
                         <p className='text-[16px] text-[#34afa9]'>The ultimate all-service agency ready to simplify your project needs and curate results fit for your digital needs and niche.</p>
@@ -53,7 +54,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='p-[10px] flex lg:flex-row md:flex-col sm:flex-col'>
+                <div className='p-[10px] flex lg:flex-row md:flex-col sm:flex-col bottomBox'>
                     <div className="left flex-1 px-[16px]">
                         <div className="flex text-[#34afa9] gap-[5px] items-center mb-[15px]">
                             <PhoneIcon />
@@ -79,7 +80,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='py-[20px] flex'>
+            <div className='py-[20px] flex copyright'>
                 <div className='mx-auto text-white'>
                     webdeezien © 2024 All Rights Reserved
                 </div>
