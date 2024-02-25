@@ -7,6 +7,7 @@ import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
 import GetConsultant from '../../Components/GetConsultant/GetConsultant';
 
 const Home = () => {
+    console.log('shmeer ')
     return (
         <div className="overflow-x-hidden">
             <div>
