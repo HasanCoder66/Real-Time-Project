@@ -1,26 +1,15 @@
-import React, { useState } from 'react'
-// import MobileNav from '../../Components/MobileNav/MobileNav';
-// import Nav from '../../Components/Nav/Nav';
+import React from 'react'
 import Hero from '../../Components/Hero/Hero';
-// import ParticlesComp from '../../Components/Particles/Particles';
 import PackageSection from '../../Components/PackageIntroSection/PackageSection';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
 import WeSpecialize from '../../Components/WeSpecialize/WeSpecialize'
 import GetConsultant from '../../Components/GetConsultant/GetConsultant';
 
-// import AboutCmp from '../../Components/AboutCmp/AboutCmp';
-
 const Home = () => {
-    
     return (
         <div className="overflow-x-hidden">
             <div>
-                {/* NAVBAR ===> */}
-                
-                {/* HERO ===> */}
-                {/* <ParticlesComp /> */}
-                
                 <Hero />
                 <div className="relative z-[30]" >
                     <SectionTwo />
@@ -28,9 +17,6 @@ const Home = () => {
                     <SectionThree />
                     <WeSpecialize />
                     <GetConsultant />
-                    {/* <AboutCmp /> */}
-                    {/* <Services /> */}
-                    {/* <Skills /> */}
                 </div>
             </div>
         </div>
