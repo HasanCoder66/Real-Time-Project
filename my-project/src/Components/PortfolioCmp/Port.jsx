@@ -12,7 +12,7 @@ const Port = () => {
             <p className='text-white text-center mb-[4rem]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repellat porro autem consequatur reprehenderit, esse eveniet officia, maiores ab ut et expedita tempore in natus.</p>
             <div className='flex justify-evenly mt-[2rem]  flex-wrap gap-[20px]'>
             {cardDataPort.map((data) => (
-          <div >
+          <div className='hover:scale-[1.05] transition-all ease-in-out duration-300' >
             <PortCard data={data} />
           </div>
         ))}

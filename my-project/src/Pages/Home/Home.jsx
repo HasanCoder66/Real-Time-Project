@@ -5,6 +5,7 @@ import SectionTwo from "../../Components/SectionTwo/SectionTwo";
 import SectionThree from "../../Components/SectionThree/SectionThree";
 import WeSpecialize from "../../Components/WeSpecialize/WeSpecialize";
 import GetConsultant from "../../Pages/GetConsultPage/GetConsultant";
+import TestimonialsCmp from "../../Components/Testimonials/TestimonialsCmp";
 
 const Home = () => {
   console.log("shmeer ");
@@ -18,6 +19,7 @@ const Home = () => {
           <SectionThree />
           <WeSpecialize />
           <GetConsultant />
+          <TestimonialsCmp />
         </div>
       </div>
     </div>
