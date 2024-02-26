@@ -27,7 +27,7 @@ const MobileNav = ({ nav, closeNav }) => {
             About
           </div>
         </Link>
-        <Link to=""></Link>
+        <Link to='/portfolio'></Link>
         <div className="nav-link-mobile" onClick={closeNav}>
           Portfolio
         </div>

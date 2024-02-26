@@ -1,6 +1,6 @@
 import React from "react";
-import InputCmp from "../InputCmp/InputCmp";
-import TextareaCmp from "../TextAreaCmp/TextAreaCmp";
+import InputCmp from "../../Components/InputCmp/InputCmp";
+import TextareaCmp from "../../Components/TextAreaCmp/TextAreaCmp";
 
 const GetConsultant = () => {
   return (

@@ -8,7 +8,8 @@ import { useState } from "react";
 import MobileNav from "./Components/MobileNav/MobileNav";
 // import SectionTwo from "./Components/SectionTwo/SectionTwo";
 import Service from "./Pages/ServicesPage/Service";
-import GetConsultant from "./Components/GetConsultant/GetConsultant";
+import GetConsultant from "./Pages/GetConsultPage/GetConsultant";
+import PortfolioPage from "./Pages/PortfolioPage/Portfolio";
 
 const Layout = () => {
   const [nav, setNav] = useState(false);
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/GetConsultancy",
         element: <GetConsultant />,
+      },
+      {
+        path: "/Portfolio",
+        element: <PortfolioPage />,
       },
     ],
   },

@@ -21,7 +21,7 @@ const Nav = ({ openNav }) => {
         <Link to='/about'>
           <div className="nav-link">About</div>
         </Link>
-        <Link>
+        <Link to='/portfolio'>
           <div className="nav-link">Portfolio</div>
         </Link>
         <Link to='/Contact'>
