@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceCard from '../../Components/ServiceCard/ServiceCard'
 import { logoPackage, websitePackage, ecommercePackage } from './DummyServices'
 import { useLocation } from 'react-router-dom'
+import GetConsultant from '../GetConsultPage/GetConsultant'
 
 const Service = () => {
     const { pathname } = useLocation();
@@ -30,6 +31,7 @@ const Service = () => {
                     }
                 </div>
             </div>
+            <GetConsultant />
         </div>
     )
 }
