@@ -7,12 +7,12 @@ const Specialize = ({data}) => {
   return (
     <>
       <div className="card">
-          <h2 className='text-center font-medium text-yellow-500 text-[20px]'>{data?.title}</h2>
+          <h2 className='text-center font-medium text-[#097969] text-[20px]'>{data?.title}</h2>
         
 {/* <img src="" alt="" /> */}
-        <div className="temp-scale">
+        {/* <div className="temp-scale">
           <span className="text-[#34afa9]">{data?.Button}</span>
-        </div>
+        </div> */}
       </div>
     </>
   );

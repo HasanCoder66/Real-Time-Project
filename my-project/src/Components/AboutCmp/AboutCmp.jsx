@@ -7,8 +7,8 @@ const AboutCmp = () => {
       <div className="text-center w-[100%]  p-[5rem] mt-[1rem]">
         <div className="flex justify-evenly items-center sm:flex-col md:flex-row space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12 ">
           <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-black font-bold md:text-4xl">
-              <span className="text-yellow-400">About</span> webdeezien
+            <h2 className="text-2xl text-[#097969]  font-bold md:text-4xl">
+              <span className="text-[#fdda0d]">About</span> webdeezien
             </h2>
             <p className="text mt-6 text-black text-center">
               WEB DEEZIEN COMPANY IN NEW YORK CITY FOCUSED ON YOUR BUSINESS

@@ -32,6 +32,7 @@ const Textarea = styled(BaseTextareaAutosize)(
   max-width: 600px; /* Adjust max-width as needed */
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.875rem;
+  resize : none;
   font-weight: 400;
   line-height: 1.5;
   padding: 8px 12px;

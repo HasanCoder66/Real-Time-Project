@@ -6,10 +6,10 @@ const GetConsultant = () => {
   return (
     <div className='p-[5rem] pr-[5rem] h-[100vh] bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1708534584/branding%20hopes/banner_b0pbcx.jpg")]  pt-[12vh] bg-cover bg-center bg-[#18252b] '>
       <div>
-        <h1 className="text-[35px] md:text-[50px] text-yellow-300  font-bold ">
+        <h1 className="text-[35px] md:text-[50px] text-[#FDDA0D]  font-bold ">
           Get
-          <span className="text-[#34afa9]"> Free</span>
-          <span className="text-white"> Consultancy!</span>
+          <span className="text-white"> Free</span>
+          <span className=" text-[#097969]"> Consultancy!</span>
         </h1>
         {/* <TextEffect /> */}
         <p className="mt-[1.5rem] text-[20px] text-[#ffffff]">
@@ -24,7 +24,7 @@ const GetConsultant = () => {
           <TextareaCmp />
         </div>
         <div className="right flex-1 flex justify-start items-center mt-[2rem]">
-          <button className="py-[17px] px-[39px]  bg-[#34afa9]  hover:text-white font-bold">
+          <button className="py-[17px] px-[39px]  bg-[#fdda0d]  hover:text-white font-bold hover:bg-[#097969]">
             Submit
           </button>
         </div>

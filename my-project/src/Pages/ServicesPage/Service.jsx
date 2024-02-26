@@ -14,11 +14,11 @@ const Service = () => {
     // console.log(data, "===>>>> data")
 
     return (
-        <div className='serviceContainer bg-[#18252b] mt-[80px]'>
+        <div className='serviceContainer bg-[#097969] mt-[75px]'>
             <div className='serviceWrapper py-[150px] px-[76px]'>
                 <div className='mb-[30px]'>
                     <h1 className='text-[40px] font-bold text-white'>
-                        <span className='text-[#34afa9]'>Affordable</span> Packages for Your Business
+                    <span className='text-[#fdda0d]'>Affordable</span> Packages for Your <span className='text-[#fdda0d]'>Business</span>
                     </h1>
                     <p className='text-[16px] text-white'>We offer high-quality logo design packages to satisfy your business demands while meeting your budget.</p>
                 </div>

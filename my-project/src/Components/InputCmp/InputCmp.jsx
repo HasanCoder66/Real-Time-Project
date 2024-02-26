@@ -25,7 +25,7 @@ export default function InputCmp({type, label}) {
       noValidate
       autoComplete="off"
     >
-      <div className='bg-[#34afa9]'>
+      <div className='bg-white'>
         <TextField
           id="outlined-password-input"
           label={label}

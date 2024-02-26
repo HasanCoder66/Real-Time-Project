@@ -12,14 +12,14 @@ function SectionThreeCard({data}) {
     <Card sx={{ maxWidth: 345, marginBottom: 5 }}>
       <CardActionArea>
         <CardContent className='text-center'>
-          <Typography gutterBottom variant="h5" component="div" className='text-[#1e4649] ' >
+          <Typography gutterBottom variant="h5" component="div"  className="text-[#097969] "  >
             {data?.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             {data?.desc}
           </Typography>
         </CardContent>
-      <ButtonTwo className='' text='Read More ' />
+      {/* <ButtonTwo className='' text='Read More ' /> */}
       </CardActionArea>
     </Card>
   );

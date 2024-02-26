@@ -3,9 +3,9 @@ import './ContactCmp.css'
 import MapLocation from '../MapLocation/MapLocation'
 const ContactCmp = () => {
   return (
-    <div className='flex justify-evenly w-full md-flex-row mt-[4.5rem] bg-black p-[20px] sm:flex-row flex-col'>
+    <div className='flex justify-evenly w-full md-flex-row mt-[4.5rem] bg-[#097969] p-[20px] sm:flex-row flex-col'>
     <div className="contact  " id="contact">
-    <h2 className="heading pt-[2rem]">
+    <h2 className="heading pt-[2rem] text-[#fdda0d]">
         Contact Us
     </h2>
     <form action="" className='from'>
@@ -22,10 +22,10 @@ const ContactCmp = () => {
         <input type="submit" value="send Message" className="btn mb-[1rem]"/>
     </form>
 </div>
-<div className=' bg-black text-center  flex justify-center items-center'>
+<div className=' bg-[#097969] text-center  flex justify-center items-center'>
     <div>
-        <h2 className='text-3xl font-bold uppercase text-white mb-[2rem]'>
-        A question, a project, a job application?
+       <h2 className='text-3xl font-bold uppercase text-white mb-[2rem]'>
+        A <span className='text-[#fdda0d]'>question</span>, a project, a job <span className='text-[#fdda0d]'>application</span>?
         </h2>
     <p  className='text-1xl font-semibold  text-white mb-[2rem] overflow-hidden'>Please feel free to contact us and we will be happy to assist you in anyway we can!</p>
    <p  className='text-1xl font-semibold  text-white mb-[2rem] overflow-auto'>Info@webdeezien.com</p>

@@ -3,7 +3,7 @@ import SpecialCardData from '../SpecializeCard/SpecializeCardData'
 import Specialize from '../SpecializeCard/SpecializeCard'
 const WeSpecialize = () => {
   return (
-    <div className=' bg-[#34afa9] pt-[2rem]'>
+    <div className=' bg-[#097969] pt-[2rem]'>
         <div>
             <h1 className='text-center font-bold text-3xl text-white mb-[1rem] mt-[2rem]'>Working On</h1>
             <h1 className='text-center font-bold text-6xl text-white'>WE SPECIALIZE IN VARIOUS CMS</h1>
