@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
 
                     <div className='center flex flex-col flex-1 px-[16px] justify-between '>
-                        <p className='text-[18px] text-[#097969] mb-[10px] nav-link'>Services</p>
+                        <p className='text-[18px] text-[#097969] mb-[10px] nav-link-1'>Services</p>
                         <p className='text-[16px] cursor-pointer'>Web Design</p>
                         <p className='text-[16px] cursor-pointer'>Digital Marketing</p>
                         <p className='text-[16px] cursor-pointer'>Graphic Design</p>
@@ -45,7 +45,7 @@ const Footer = () => {
                         
                     </div>
                     <div className='right px-[16px] flex-1'>
-                        <p className='text-[18px] text-[#097969] mb-[10px] nav-link'>Find Us</p>
+                        <p className='text-[18px] text-[#097969] mb-[10px] nav-link-1'>Find Us</p>
                         <MapLocation />
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                     <div className="left flex-1 px-[16px]">
                         <div className="flex text-[#097969] gap-[5px] items-center mb-[15px]">
                             <PhoneIcon  className='text-[#097969]' />
-                            <span className='nav-link text-[#097969]' >Contact Us</span>
+                            <span className='nav-link-1 text-[#097969]' >Contact Us</span>
                         </div>
                         <p>(507) 623-2311
                         </p>
@@ -62,14 +62,14 @@ const Footer = () => {
                     <div className="center flex-1 px-[16px]">
                         <div className="flex  gap-[5px] items-center mb-[15px]">
                             <AlternateEmailIcon  className='text-[#097969]'/>
-                            <span className='nav-link text-[#097969]'>Email Us</span>
+                            <span className='nav-link-1 text-[#097969]'>Email Us</span>
                         </div>
                         <a>Info@webdeezien.com</a>
                     </div>
                     <div className="right flex-1 px-[16px]">
                         <div className="flex  gap-[5px] items-center mb-[15px]">
                             <LocationOnIcon className='text-[#097969]' />
-                            <span className='nav-link text-[#097969]'>Address</span>
+                            <span className='nav-link-1 text-[#097969]'>Address</span>
                         </div>
                         <p>6605 NW 121st Street Oklahoma City, Ok. 73162</p>
                     </div>

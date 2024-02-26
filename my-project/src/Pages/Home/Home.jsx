@@ -18,7 +18,7 @@ const Home = () => {
           <PackageSection />
           <SectionThree />
           <WeSpecialize />
-          <GetConsultant />
+          {/* <GetConsultant /> */}
           <TestimonialsCmp />
         </div>
       </div>

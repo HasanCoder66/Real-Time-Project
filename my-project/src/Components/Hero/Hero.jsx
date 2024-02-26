@@ -3,13 +3,13 @@ import React from "react";
 import TextEffect from '../TextEffect/TextEffects'
 // import Image from "next/image";
 // import { ArrowDownTrayIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
-import Particle from "../Particles/Particles";
+// import Particle from "../Particles/Particles";
 // import Button from "../Button/Button";
-import { Parallax } from "react-parallax";
+// import { Parallax } from "react-parallax";
 const Hero = () => {
   return (
     // bg-[url("/images/banner.jpg")]
-    <Parallax strength={600} bgImage='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HCz26hsWhLfQygKl_JITj5NJ4Lnnk0bW29sr4kLxgg&s'>
+    // <Parallax strength={600} bgImage='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HCz26hsWhLfQygKl_JITj5NJ4Lnnk0bW29sr4kLxgg&s'>
                 
     <div className='h-[88vh] bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1708534584/branding%20hopes/banner_b0pbcx.jpg")]  mt-[10vh] bg-cover bg-center bg-[#18252b] '>
       {/* <Particle /> */}
@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-    </Parallax>
+    // </Parallax>
   );
 };
 
