@@ -90,7 +90,6 @@ export const websitePackage = [
         ]
     },
 ]
-
 export const ecommercePackage = [
     {
         title: "Basic ecommerce Website",
@@ -132,3 +131,4 @@ export const ecommercePackage = [
         ]
     },
 ]
+

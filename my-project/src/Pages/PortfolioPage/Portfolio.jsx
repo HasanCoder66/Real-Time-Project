@@ -3,7 +3,7 @@ import Port from '../../Components/PortfolioCmp/Port'
 
 const PortfolioPage = () => {
   return (
-    <div>
+    <div className='bg-[#097969]'>
         <Port />
         
     </div>
