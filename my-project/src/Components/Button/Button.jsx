@@ -27,7 +27,7 @@ const Button = ({ text }) => {
             viewBox="0 0 24 24"
             stroke="currentColor"
             fill="none"
-            class="w-5 h-5 text-green-400"
+            class="w-5 h-5 text-[#097969]"
           >
             <path
               d="M14 5l7 7m0 0l-7 7m7-7H3"
