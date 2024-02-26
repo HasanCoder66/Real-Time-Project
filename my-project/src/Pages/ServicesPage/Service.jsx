@@ -14,15 +14,20 @@ const Service = () => {
     // console.log(data, "===>>>> data")
 
     return (
+<<<<<<< HEAD
         <div className='serviceContainer bg-[#097969] mt-[75px]'>
             <div className='serviceWrapper py-[150px] px-[76px]'>
+=======
+        <div className='serviceContainer bg-[#18252b] mt-[80px]'>
+            <div className='serviceWrapper py-[150px] lg:px-[76px] px-[30px]'>
+>>>>>>> 39ab871b22bbc96e70b12e718086133d4544811b
                 <div className='mb-[30px]'>
                     <h1 className='text-[40px] font-bold text-white'>
                     <span className='text-[#fdda0d]'>Affordable</span> Packages for Your <span className='text-[#fdda0d]'>Business</span>
                     </h1>
                     <p className='text-[16px] text-white'>We offer high-quality logo design packages to satisfy your business demands while meeting your budget.</p>
                 </div>
-                <div className='flex flex-wrap justify-between'>
+                <div className='flex flex-wrap justify-evenly'>
                     {
                         data.map((item, index) => (
                             <ServiceCard data={item} key={index} />
