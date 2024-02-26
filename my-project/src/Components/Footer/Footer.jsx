@@ -19,7 +19,7 @@ const Footer = () => {
                         <p className='text-[23px] font-light text-white digitalText2'>Turn your ideas into reality in just a span of 4-12 weeks! Kickstart your project with us now and revamp your results.</p>
                     </div>
                     <div className="right flex-1 flex justify-end items-center px-[16px]">
-                        <button className='py-[17px] px-[39px] bg-[#fdda0d]  hover:bg-[#097969] font-bold'>Talk to an Expert</button>
+                        <button className='py-[17px] px-[39px] bg-[#fdda0d] text-black  hover:bg-[#097969] hover:text-white font-bold'>Talk to an Expert</button>
                     </div>
                 </div>
 
@@ -60,14 +60,14 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="center flex-1 px-[16px]">
-                        <div className="flex text-[#34afa9] gap-[5px] items-center mb-[15px]">
+                        <div className="flex  gap-[5px] items-center mb-[15px]">
                             <AlternateEmailIcon  className='text-[#097969]'/>
                             <span className='nav-link text-[#097969]'>Email Us</span>
                         </div>
                         <a>Info@webdeezien.com</a>
                     </div>
                     <div className="right flex-1 px-[16px]">
-                        <div className="flex text-[#34afa9] gap-[5px] items-center mb-[15px]">
+                        <div className="flex  gap-[5px] items-center mb-[15px]">
                             <LocationOnIcon className='text-[#097969]' />
                             <span className='nav-link text-[#097969]'>Address</span>
                         </div>
