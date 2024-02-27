@@ -2,6 +2,7 @@ import React from 'react'
 import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SmsOutlinedIcon from '@mui/icons-material/SmsOutlined';
+import "./card.css"
 
 const ServiceCard = ({ data }) => {
 
@@ -25,7 +26,7 @@ const ServiceCard = ({ data }) => {
                     <p className='text-[50px] font-bold text-transparent' style={{ WebkitTextStroke: "1px #fdda0d" }}>{`$${data?.price}`}</p>
                 </div>
                 <div className="desc py-[16px] pe-[10px]">
-                    <ul className='px-[25px] text-[#818181] overflow-y-auto max-h-[270px]'>
+                    <ul className='px-[25px] text-[#818181] overflow-y-auto max-h-[270px] scroll'>
                         {
                             desc.map((data) => (
                                 <li className='my-[10px] text-[12px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#097969]' />{data}</li>
