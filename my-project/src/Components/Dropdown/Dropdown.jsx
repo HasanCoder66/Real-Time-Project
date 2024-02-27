@@ -43,31 +43,31 @@ function DropdownMenu({ closeNav }) {
                     className="hover:bg-[#097969] hover:text-white px-4 py-2  "
                     onClick={closeNav}
                   >
-                    <Link to="/services/logo">Seo Packages</Link>
+                    <Link to="/services/seo">Seo Packages</Link>
                   </li>
                   <li
                     className="hover:bg-[#097969] hover:text-white px-4 py-2"
                     onClick={closeNav}
                   >
-                    <Link to="/services/web">SMM Packages</Link>
+                    <Link to="/services/smm">SMM Packages</Link>
                   </li>
                   <li
                     className="hover:bg-[#097969] hover:text-white px-4 py-2"
                     onClick={closeNav}
                   >
-                    <Link to="/services/ecommerce">Video Packages</Link>
+                    <Link to="/services/video">Video Packages</Link>
                   </li>
                   <li
                     className="hover:bg-[#097969] hover:text-white px-4 py-2"
                     onClick={closeNav}
                   >
-                    <Link to="/services/ecommerce">Branding Packages</Link>
+                    <Link to="/services/branding">Branding Packages</Link>
                   </li>
                   <li
                     className="hover:bg-[#097969] hover:text-white px-4 py-2"
                     onClick={closeNav}
                   >
-                    <Link to="/services/ecommerce">Hosting Packages</Link>
+                    <Link to="/services/hosting">Hosting Packages</Link>
                   </li>
                 </ul>
             )}

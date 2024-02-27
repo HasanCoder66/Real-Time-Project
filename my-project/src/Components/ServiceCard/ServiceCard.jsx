@@ -25,16 +25,16 @@ const ServiceCard = ({ data }) => {
                     <p className='text-[50px] font-bold text-transparent' style={{ WebkitTextStroke: "1px #fdda0d" }}>{`$${data?.price}`}</p>
                 </div>
                 <div className="desc py-[16px] pe-[10px]">
-                    <ul className='px-[25px] text-[#818181]'>
+                    <ul className='px-[25px] text-[#818181] overflow-y-auto max-h-[270px]'>
                         {
-                            desc.map((data)=> (
-                                <li className='my-[10px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#097969]' />{data}</li>
+                            desc.map((data) => (
+                                <li className='my-[10px] text-[12px] flex items-center gap-[15px]'><CheckCircleOutlinedIcon className='text-[#097969]' />{data}</li>
                             ))
                         }
                     </ul>
                 </div>
                 <div className="assurance flex items-center justify-center gap-[10px] text-white bg-[#097969] py-[10px] px-[38px]">
-                    <CheckCircleOutlinedIcon className='text-white'/> 100% Approval Assurance
+                    <CheckCircleOutlinedIcon className='text-white' /> 100% Approval Assurance
                 </div>
                 <div className="btns flex items-center justify-evenly m-[15px]">
                     <button className='text-[#fdda0d]  border-[1px] border-[#097969] py-[5px] px-[30px] flex items-center gap-[5px] rounded-full transition-all ease-in-out duration-300 hover:bg-[#097969]  hover:border-none'>
