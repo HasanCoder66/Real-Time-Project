@@ -5,7 +5,6 @@ const TestimonailCard = () => {
     <div class="bg-[#097969]">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className=" mt-5 flex-1 sm:flex-col ">
-          {/* text-[35px] md:text-[75px] text-[#18252b] font-bold md:ml-[8rem]  sm:w-[100%] sm:text-[55px] */}
           <h1 className=" font-bold md:text-[75px] text-left px-[65px]  text-[#fdda0d] text-[55px] mt-[1rem] hover:text-white ">
             TESTIMONIALS{" "}
           </h1>

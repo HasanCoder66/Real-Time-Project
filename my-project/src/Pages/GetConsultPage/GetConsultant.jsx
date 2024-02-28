@@ -11,7 +11,6 @@ const GetConsultant = () => {
           <span className="text-white"> Free</span>
           <span className=" text-[#097969]"> Consultancy!</span>
         </h1>
-        {/* <TextEffect /> */}
         <p className="mt-[1.5rem] text-[20px] text-[#ffffff]">
           We have experts available to provide guidance for you.
         </p>

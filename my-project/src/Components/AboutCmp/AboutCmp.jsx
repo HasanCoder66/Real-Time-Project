@@ -15,13 +15,24 @@ const AboutCmp = () => {
               GROWTH
             </p>
             <p className="text mt-6 text-black text-center">
-              Catering startups and enterprisesblack with the best UX, UI, and localization!
+              Catering startups and enterprisesblack with the best UX, UI, and
+              localization!
             </p>
             <p className="text mt-6 text-black text-center">
-              We are an award-winning digital marketing agency in NYC, delivering excellent results and exceeding clients' expectations by creating top-notch online experiences. Our proficiency ensures to pull off the most aesthetically stunning and navigation-friendly websites. We are responsible for planning, researching, visualizing, and coding websites. The business goals can align with our creativity and innovation by combining text, images, videos, and graphics.
+              We are an award-winning digital marketing agency in NYC,
+              delivering excellent results and exceeding clients' expectations
+              by creating top-notch online experiences. Our proficiency ensures
+              to pull off the most aesthetically stunning and
+              navigation-friendly websites. We are responsible for planning,
+              researching, visualizing, and coding websites. The business goals
+              can align with our creativity and innovation by combining text,
+              images, videos, and graphics.
             </p>
             <p className="text mt-6 text-black text-center">
-              Contact the best web design company in New York to channel our energy for increased leads and boosting sales. We use our expertise to push the boundaries of the modern-day and guarantee that your website ends up well-optimized and glitch-free.
+              Contact the best web design company in New York to channel our
+              energy for increased leads and boosting sales. We use our
+              expertise to push the boundaries of the modern-day and guarantee
+              that your website ends up well-optimized and glitch-free.
             </p>
           </div>
           <div className="">
