@@ -1,18 +1,12 @@
 import React from "react";
 import "./SpecializeCard.css";
-const Specialize = ({data}) => {
-  // const {title, Button} = SpecializeCardData 
-  // console.log(data, 'tiltle')
-  // console.log(Button, 'Button')
+const Specialize = ({ data }) => {
   return (
     <>
       <div className="card">
-          <h2 className='text-center font-medium text-[#097969] text-[20px]'>{data?.title}</h2>
-        
-{/* <img src="" alt="" /> */}
-        {/* <div className="temp-scale">
-          <span className="text-[#34afa9]">{data?.Button}</span>
-        </div> */}
+        <h2 className="text-center font-medium text-[#097969] text-[20px]">
+          {data?.title}
+        </h2>
       </div>
     </>
   );

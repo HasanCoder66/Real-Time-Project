@@ -6,7 +6,6 @@ import About from "./Pages/AboutPage/About";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import { useState } from "react";
 import MobileNav from "./Components/MobileNav/MobileNav";
-// import SectionTwo from "./Components/SectionTwo/SectionTwo";
 import Service from "./Pages/ServicesPage/Service";
 import GetConsultant from "./Pages/GetConsultPage/GetConsultant";
 import PortfolioPage from "./Pages/PortfolioPage/Portfolio";

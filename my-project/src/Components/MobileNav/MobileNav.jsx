@@ -4,10 +4,7 @@ import DropdownMenu from "../Dropdown/Dropdown";
 import { Link } from "react-router-dom";
 
 const MobileNav = ({ nav, closeNav }) => {
-  // const navAnimated = nav? 'block' : 'hidden'
   const navAnimated = nav ? "translate-x-0" : "translate-x-[-100%]";
-  // console.log(nav);
-  // console.log(navAnimated);
   return (
     <div
       className={`fixed ${navAnimated}  transform transition-all duration-300 top-0 bottom-0 left-0 right-0 z-[1000000] bg-[#18252b]`}
