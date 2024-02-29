@@ -8,10 +8,10 @@ const Hero = () => {
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-light ">
             WE ARE A RESULT-DRIVEN{" "}
-            <span className="text-[#FDDA0D]">
+            <div className="text-[#FDDA0D]">
               {" "}
               <TextEffect />
-            </span>{" "}
+            </div>{" "}
             COMPANY!
           </h1>
 
