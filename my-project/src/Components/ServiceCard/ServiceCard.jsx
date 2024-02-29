@@ -13,12 +13,12 @@ const ServiceCard = ({ data }) => {
     // console.log(desc)
 
     return (
-        <div className='SCradContainer rounded-xl border-4 border-[#fdda0d] bg-white max-w-[360px] mt-[15px] me-[15px] mb-[15px] hover:scale-[1.05] transition-all ease-in-out duration-300'>
+        <div className='SCradContainer rounded-xl border-2 border-[#fdda0d] bg-[#18252b] max-w-[360px] mt-[15px] me-[15px] mb-[15px] hover:scale-[1.05] transition-all ease-in-out duration-300'>
             <div className="SCardWrapper">
                 <div className="title text-center py-[10px] px-[20px]">
-                    <div className='text-black text-[12px] font-bold'>{data?.title}</div>
-                    <div className='text-black text-[12px] font-bold'>PACKAGE</div>
-                    <div className='text-black text-[12px] my-[5px]'>
+                    <div className='text-[#097969] text-[12px] font-bold'>{data?.title}</div>
+                    <div className='text-[#097969] text-[12px] font-bold'>PACKAGE</div>
+                    <div className='text-[#818181] text-[12px] my-[5px]'>
                         Suitable for potential super-startups and brand revamps for companies.
                     </div>
                 </div>
