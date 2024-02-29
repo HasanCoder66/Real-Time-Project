@@ -6,6 +6,7 @@ import SectionThree from "../../Components/SectionThree/SectionThree";
 import WeSpecialize from "../../Components/WeSpecialize/WeSpecialize";
 import GetConsultant from "../../Pages/GetConsultPage/GetConsultant";
 import TestimonialsCmp from "../../Components/Testimonials/TestimonialsCmp";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Home = () => {
   console.log("shmeer ");
@@ -14,7 +15,9 @@ const Home = () => {
       <div>
         <Hero />
         <div className="relative z-[30]">
-          <SectionTwo />
+          <Slide direction="left" triggerOnce>
+            <SectionTwo />
+          </Slide >
           <PackageSection />
           <SectionThree />
           <WeSpecialize />
