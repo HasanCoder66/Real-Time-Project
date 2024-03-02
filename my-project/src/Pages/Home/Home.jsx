@@ -9,7 +9,7 @@ import TestimonialsCmp from "../../Components/Testimonials/TestimonialsCmp";
 import { Fade, Slide } from "react-awesome-reveal";
 
 const Home = () => {
-  console.log("shmeer ");
+  // console.log("shmeer ");
   return (
     <div className="overflow-x-hidden">
       <div>

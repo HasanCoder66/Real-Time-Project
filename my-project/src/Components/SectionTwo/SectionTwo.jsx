@@ -5,7 +5,7 @@ import LetsTalkBtn from "../LetsTalkBtn/LetsTalkBtn";
 
 const SectionTwo = () => {
   return (
-    <div className=" flex w-[100%] h-[100%] justify-center items-center flex-col md:flex-row  sm:text-center mt-[3rem]">
+    <div className="flex w-[100%] h-[100%] justify-center items-center flex-col md:flex-row  sm:text-center mt-[3rem]">
       <div className=" mt-5 flex-1 sm:flex-col ">
         <div className="w-[100%]">
           <LiquidText />
