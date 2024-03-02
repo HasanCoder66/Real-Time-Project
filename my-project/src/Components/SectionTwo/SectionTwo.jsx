@@ -1,15 +1,30 @@
 import React from "react";
 import Button from "../Button/Button";
+import LiquidText from "../LiquidText/LiquidText";
 
 const SectionTwo = () => {
   return (
-    <div className=" flex w-[100%] h-[100%]  justify-center items-center flex-col md:flex-row  sm:text-center mt-[3rem]">
+    <div className=" flex w-[100%] h-[100%] justify-center items-center flex-col md:flex-row  sm:text-center mt-[3rem]">
       <div className=" mt-5 flex-1 sm:flex-col ">
-        <h1 className=" font-bold md:text-[75px] text-center   text-[#097969] text-[55px] mt-[1rem]">
+        {/* <h1 className=" font-bold md:text-[75px] text-center text-[#097969] text-[55px] mt-[1rem]">
           STEERING <span className="text-[#FDDA0D]">360</span> ON DIGITAL
           AVENUES
-        </h1>
-        <p className="sm:text-[15px] md:text-[15px] text-black text-center px-[50px] sm:w-[100]">
+        </h1> */}
+
+        {/* <div className="content">
+          <h1 className=" font-extrabold md:text-[75px] text-center text-[#097969] text-[75px]">
+            STEERING 360 ON DIGITAL AVENUES
+          </h1>
+          <h1 className=" font-extrabold md:text-[75px] text-center text-[#097969] text-[75px]">
+            STEERING 360 ON DIGITAL AVENUES
+          </h1>
+        </div> */}
+
+        <div className="w-[100%]">
+          <LiquidText />
+        </div>
+
+        <p className="sm:text-[15px] md:text-[15px] text-black text-center px-[50px] sm:w-[100] ">
           We believe in transformations and make all accelerations to simplify
           the process and complete each task an easy breeze for you. Our aim is
           simple, to innovate, create and curate perfection through our
