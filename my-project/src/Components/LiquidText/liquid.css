@@ -39,3 +39,30 @@
     }
 
 }
+
+@media (max-width: 1360px) {
+    .myText {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .myText {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 820px) {
+    .myText {
+        font-size: 35px;
+    }
+
+    .content h1:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 1px #097969;
+    }
+
+    .textSpan {
+        -webkit-text-stroke: 1px #fdda0d;
+    }
+}
