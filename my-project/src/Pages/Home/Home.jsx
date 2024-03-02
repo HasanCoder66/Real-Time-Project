@@ -15,9 +15,9 @@ const Home = () => {
       <div>
         <Hero />
         <div className="relative z-[30]">
-          <Slide direction="left" triggerOnce>
+          {/* <Slide direction="left" triggerOnce> */}
             <SectionTwo />
-          </Slide >
+          {/* </Slide > */}
           <PackageSection />
           <SectionThree />
           <WeSpecialize />
