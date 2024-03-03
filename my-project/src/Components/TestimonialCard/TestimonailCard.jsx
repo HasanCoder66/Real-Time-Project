@@ -6,14 +6,14 @@ const TestimonailCard = () => {
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className=" mt-5 flex-1 sm:flex-col ">
           <h1 className=" font-bold md:text-[75px] text-left px-[65px]  text-[#fdda0d] text-[55px] mt-[1rem] hover:text-white ">
-            TESTIMONIALS{" "}
+            <marquee behavior="smooth" direction="row">TESTIMONIALS{" "}</marquee>
           </h1>
           <p className="sm:text-[15px] md:text-[25px] text-white text-left px-[75px] sm:w-[100] pb-[2rem]">
             What Client Say <span className="text-[#fdda0d]">About</span> Us?
           </p>
         </div>
         <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
-          <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
+          <figure class="flex flex-col justify-center items-center p-8 text-center  border border-[#fdda0d] md:p-12 lg:border-r bg-[#18252b] ">
             <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 Speechless with how easy this was to integrate
@@ -111,7 +111,7 @@ const TestimonailCard = () => {
               </div>
             </figcaption>
           </figure>
-          <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
+          <figure class="flex flex-col justify-center items-center p-8 text-center border border-[#fdda0d] md:p-12 bg-[#18252b] ">
             <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 Efficient Collaborating
