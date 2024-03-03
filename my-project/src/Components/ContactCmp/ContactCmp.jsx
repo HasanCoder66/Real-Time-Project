@@ -3,7 +3,7 @@ import "./ContactCmp.css";
 import MapLocation from "../MapLocation/MapLocation";
 const ContactCmp = () => {
   return (
-    <div className="flex justify-evenly w-full md-flex-row mt-[4.5rem] bg-[#097969] p-[20px] sm:flex-row flex-col">
+    <div className="flex justify-evenly w-full md-flex-row  bg-[#097969] p-[20px] sm:flex-row flex-col">
       <div className="contact  " id="contact">
         <h2 className="heading pt-[2rem] text-[#fdda0d]">Contact Us</h2>
         <form action="" className="from">
@@ -22,8 +22,9 @@ const ContactCmp = () => {
             cols="30"
             rows="10"
             placeholder="Your Message"
+            // className="heading"
           ></textarea>
-          <input type="submit" value="send Message" className="btn mb-[1rem]" />
+          <input type="submit" value="Send Message" className="btn mb-[1rem] text-white text-2xl hover:bg-[#fdda0d] w-[100%] h-[10vh] rounded-lg" />
         </form>
       </div>
       <div className=" bg-[#097969] text-center  flex justify-center items-center">

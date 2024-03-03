@@ -3,7 +3,7 @@ import ContactCmp from '../../Components/ContactCmp/ContactCmp'
 
 const ContactPage = () => {
   return (
-    <div className='mt-[4rem]'>
+    <div className=''>
         <ContactCmp />
     </div>
   )

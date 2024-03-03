@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button/Button";
 import LiquidText from "../LiquidText/LiquidText";
 import LetsTalkBtn from "../LetsTalkBtn/LetsTalkBtn";
+import { Link } from "react-router-dom";
 
 const SectionTwo = () => {
   return (
@@ -23,7 +24,9 @@ const SectionTwo = () => {
             Start a Conversation
           </p>
           <div className="w-fit py-[10px]">
+            <Link to='/contact'>
             <LetsTalkBtn />
+            </Link>
           </div>
         </div>
       </div>
