@@ -36,7 +36,7 @@ const Hero = () => {
           </motion.p>
         </motion.div>
         {/* <motion.div className="w-[200px] h-[200px] bg-[#ffffff] mx-[80px] rounded-full"></motion.div> */}
-        <motion.div style={{ x: yText3 }} className='w-[100%] bg-[url("/images/stars.png")] bg-repeat bg-repeat-x bg-cover h-[100%] absolute top-[0px] right-[0px] left-[0px] bottom-[0px] opacity-[30%]'></motion.div>
+        <motion.div style={{ x: yText3 }} className='w-[100%] bg-[url("/images/stars.png")] bg-repeat bg-repeat-x bg-cover h-[100%] absolute top-[120px] right-[0px] left-[0px] bottom-[0px] opacity-[30%]'></motion.div>
         {/* ============================ */}
       </div>
     </div>
