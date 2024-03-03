@@ -4,7 +4,7 @@ import cardDataPort from "../../Components/PortfolioCard/cardDataPort";
 
 const Port = () => {
   return (
-    <div className="bg-[#097969] pt-[8rem] pb-[4.5rem]">
+    <div className="bg-[#097969]  pb-[4.5rem]">
       <div className="lg:p-[60px] bg-[#097969]">
         <h1 className="font-bold text-[36px] text-center my-[20px] text-white">
           OUR <span className="text-[#FDDA0D]">WORK</span> FOR OUR CLIENTS

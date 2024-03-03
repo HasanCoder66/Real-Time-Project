@@ -4,7 +4,7 @@ import AboutImg from "../AboutImg/AboutImg";
 const AboutCmp = () => {
   return (
     <>
-      <div className="text-center w-[100%] lg:p-[5rem] p-[2rem] mt-[5rem]">
+      <div className="text-center w-[100%] lg:p-[5rem] p-[2rem] ">
         <div className="flex justify-evenly items-center lg:flex-row flex-col space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12 ">
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-[#097969]  font-bold md:text-4xl">
