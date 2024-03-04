@@ -27,6 +27,10 @@
     -webkit-text-stroke: 2px #fdda0d;
 }
 
+.myText {
+    font-size: 75px;
+}
+
 @keyframes liquid {
 
     0%,
