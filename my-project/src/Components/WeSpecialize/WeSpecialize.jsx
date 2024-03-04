@@ -9,7 +9,7 @@ const WeSpecialize = () => {
           Working On
         </h1>
         <h1 className="text-center font-bold text-6xl text-white">
-          WE SPECIALIZE IN VARIOUS CMS
+          WE <span className="text-[#fdda0d]">SPECIALIZE</span> IN VARIOUS CMS
         </h1>
       </div>
       <div className="flex  justify-evenly flex-wrap gap-5 p-[50px]">
