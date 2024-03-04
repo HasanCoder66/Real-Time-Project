@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const SectionTwo = () => {
   return (
-    <div className="flex w-[100%] h-[100%] justify-center items-center flex-col md:flex-row  sm:text-center mt-[3rem]">
+    <div className="flex w-[100%] h-[100%] justify-center items-center flex-col md:flex-row  sm:text-center">
       <div className=" mt-5 flex-1 sm:flex-col ">
         <div className="w-[100%]">
           <LiquidText />
@@ -25,7 +25,7 @@ const SectionTwo = () => {
           </p>
           <div className="w-fit py-[10px]">
             <Link to='/contact'>
-            <LetsTalkBtn />
+              <LetsTalkBtn />
             </Link>
           </div>
         </div>
