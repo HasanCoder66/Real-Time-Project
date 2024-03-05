@@ -24,10 +24,11 @@ const MobileNav = ({ nav, closeNav }) => {
             About
           </div>
         </Link>
-        <Link to="/portfolio"></Link>
+        <Link to="/portfolio">
         <div className="nav-link-mobile" onClick={closeNav}>
           Portfolio
         </div>
+        </Link>
         <Link to="/contact">
           <div className="nav-link-mobile" onClick={closeNav}>
             Contact
