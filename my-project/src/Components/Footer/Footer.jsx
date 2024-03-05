@@ -50,11 +50,15 @@ const Footer = () => {
             <p className="text-[18px] text-[#097969] mb-[10px] nav-link-1">
               Services
             </p>
+            <p className="text-[16px] cursor-pointer">Logo Packages</p>
+            <p className="text-[16px] cursor-pointer">Website Packages</p>
+            <p className="text-[16px] cursor-pointer">Seo</p>
+            <p className="text-[16px] cursor-pointer">E-Commerce Packages</p>
             <p className="text-[16px] cursor-pointer">Web Design</p>
-            <p className="text-[16px] cursor-pointer">Digital Marketing</p>
-            <p className="text-[16px] cursor-pointer">Graphic Design</p>
+            <p className="text-[16px] cursor-pointer">SMM Packages</p>
+            <p className="text-[16px] cursor-pointer">Branding Packages</p>
+            <p className="text-[16px] cursor-pointer">Video Packages</p>
 
-            <p className="text-[16px] cursor-pointer">Video Editing</p>
           </div>
           <div className="right px-[16px] flex-1">
             <p className="text-[18px] text-[#097969] mb-[10px] nav-link-1">
