@@ -1,7 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./ContactCmp.css";
 import MapLocation from "../MapLocation/MapLocation";
 import emailjs from "@emailjs/browser"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ContactCmp = () => {
   const form = useRef();
 
@@ -11,15 +14,18 @@ const ContactCmp = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('Your service ID', 'Your template ID', form.current, {
+        publicKey: 'Your public key',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          toast.success("Email Send Successfully");
+
         },
         (error) => {
           console.log('FAILED...', error.text);
+          toast.error("Email Send Failed");
         },
       );
   };
@@ -28,15 +34,16 @@ const ContactCmp = () => {
     <div className="flex justify-evenly w-full md-flex-row  bg-[#097969] p-[20px] sm:flex-row flex-col">
       <div className="contact  " id="contact">
         <h2 className="heading pt-[2rem] text-[#fdda0d]">Contact Us</h2>
+
         <form action="" className="from" ref={form} onSubmit={sendEmail}>
           <div className="input-box">
-            <input type="text" placeholder="Full Name" name="user_name" />
-            <input type="email" placeholder="Email Address" name="user_email" />
+            <input type="text" placeholder="Full Name" name="name" />
+            <input type="email" placeholder="Email Address" name="email" />
           </div>
 
           <div className="input-box">
             <input type="number" placeholder="Mobile Number" name="mobile_number" />
-            <input type="text" placeholder="Email Subject" name="email_subject"/>
+            <input type="text" placeholder="Email Subject" name="subject" />
           </div>
           <textarea
             name="message"
@@ -45,11 +52,23 @@ const ContactCmp = () => {
             rows="10"
             placeholder="Your Message"
           // className="heading"
-          
+
           ></textarea>
           <input type="submit" value="Send" className="btn mb-[1rem] text-white text-2xl hover:bg-[#fdda0d] w-[100%] h-[10vh] rounded-lg" />
         </form>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition:Bounce />
       <div className=" bg-[#097969] text-center  flex justify-center items-center">
         <div>
           <h2 className="text-3xl font-bold uppercase text-white mb-[2rem]">
