@@ -15,7 +15,7 @@ const ServiceCard = ({ data }) => {
 
     return (
         <Fade direction='up' triggerOnce cascade damping={0.6} fraction={0.5}>
-            <div className='SCradContainer rounded-xl border-2 border-[#fdda0d] bg-[#18252b] max-w-[360px] mt-[15px] me-[15px] mb-[15px] hover:scale-[1.05] transition-all ease-in-out duration-300'>
+            <div className='SCradContainer rounded-xl border-2 border-[#fdda0d] bg-[#18252b] max-w-[360px] min-h-[600px] mt-[15px]  mb-[15px] hover:scale-[1.05] transition-all ease-in-out duration-300'>
                 <div className="SCardWrapper">
                     <div className="title text-center py-[10px] px-[20px]">
                         <div className='text-[#097969] text-[12px] font-bold'>{data?.title}</div>
