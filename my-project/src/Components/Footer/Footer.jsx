@@ -8,6 +8,7 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import MapLocation from "../MapLocation/MapLocation";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,9 +26,11 @@ const Footer = () => {
             </p>
           </div>
           <div className="right flex-1 flex justify-end items-center px-[16px]">
+            <Link to='/contact'>
             <button className="py-[17px] px-[39px] bg-[#fdda0d] text-black  hover:bg-[#097969] hover:text-white font-bold">
               Talk to an Expert
             </button>
+            </Link>
           </div>
         </div>
 
@@ -50,14 +53,30 @@ const Footer = () => {
             <p className="text-[18px] text-[#097969] mb-[10px] nav-link-1">
               Services
             </p>
+            <Link to='/services/logo'>
             <p className="text-[16px] cursor-pointer">Logo Packages</p>
+            </Link>
+            <Link to='/services/web'>
             <p className="text-[16px] cursor-pointer">Website Packages</p>
+            </Link>
+            <Link to='/services/seo'>
             <p className="text-[16px] cursor-pointer">Seo</p>
+            </Link>
+            <Link to='/services/ecommerce'>
             <p className="text-[16px] cursor-pointer">E-Commerce Packages</p>
-            <p className="text-[16px] cursor-pointer">Web Design</p>
+            </Link>
+            <Link to='/services/smm'>
             <p className="text-[16px] cursor-pointer">SMM Packages</p>
+            </Link>
+            <Link to='/services/branding'>
             <p className="text-[16px] cursor-pointer">Branding Packages</p>
+            </Link>
+            <Link to='/services/video'>
             <p className="text-[16px] cursor-pointer">Video Packages</p>
+            </Link>
+            <Link to='/services/hosting'>
+            <p className="text-[16px] cursor-pointer">Hosting Packages</p>
+            </Link>
 
           </div>
           <div className="right px-[16px] flex-1">

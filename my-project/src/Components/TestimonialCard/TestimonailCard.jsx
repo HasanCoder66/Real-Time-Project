@@ -5,8 +5,8 @@ const TestimonailCard = () => {
     <div class="bg-[#097969]">
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className=" mt-5 flex-1 sm:flex-col ">
-          <h1 className=" font-bold md:text-[75px] text-left px-[65px]  text-[#fdda0d] text-[55px] mt-[1rem] hover:text-white ">
-            <marquee behavior="smooth" direction="row">TESTIMONIALS{" "}</marquee>
+          <h1 className=" font-bold md:text-[75px] text-left   text-[#fdda0d] text-[50px] mt-[1rem] hover:text-white uppercase">
+            testimonials
           </h1>
           <p className="sm:text-[15px] md:text-[25px] text-white text-left px-[75px] sm:w-[100] pb-[2rem]">
             What Client Say <span className="text-[#fdda0d]">About</span> Us?
