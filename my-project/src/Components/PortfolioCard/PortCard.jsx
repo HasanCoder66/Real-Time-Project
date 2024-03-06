@@ -1,32 +1,15 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import React from 'react'
 
-export default function PortCard({ data }) {
+const PortCard = ({ data }) => {
+  console.log(data, "======>>>> data for port")
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt={data?.title}
-        height="140"
-        image={data?.imgUrl}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {data?.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {data?.desc}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  );
+    <div className='w-[300px] h-[300px] rounded flex flex-col items-center gap-[5px] cursor-pointer my-[10px]'>
+      <div className='w-[100%] h-[100%] rounded'>
+        <img src={data?.imgUrl} alt="" className='w-[100%] h-[100%] object-cover rounded' />
+      </div>
+      <p className='text-white font-bold'>{data?.title}</p>
+    </div>
+  )
 }
+
+export default PortCard
