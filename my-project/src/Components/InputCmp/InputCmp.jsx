@@ -2,7 +2,8 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import '../ContactCmp/ContactCmp.css'
-export default function InputCmp({type, label}) {
+export default function InputCmp({type, label , ref}) {
+   console.log(ref)
   return (
     // <>
     //     <div className="input-box">

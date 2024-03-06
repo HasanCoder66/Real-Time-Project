@@ -49,7 +49,7 @@ const ContactCmp = () => {
             name="message"
             id=""
             cols="30"
-            rows="10"
+            rows="10"  
             placeholder="Your Message"
           // className="heading"
 
