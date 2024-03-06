@@ -1,30 +1,45 @@
-import React, { useRef } from "react";
-import InputCmp from "../../Components/InputCmp/InputCmp";
-import TextareaCmp from "../../Components/TextAreaCmp/TextAreaCmp";
-
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const GetConsultant = () => {
   const form = useRef();
+ const [ email , setEmail] = useState()
+ const [ number , setNumber] = useState()
+ const [ message , setMessage] = useState()
+ const [ name , setName] = useState()
+//  console.log(email);
+//  console.log(number);
+//  console.log(message);
+//  console.log(name);
 
   // ==================================EmailJS function ==============================//
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if(email === '' && number === '' && message === '' && name === ''){
+     return toast.error('Missings Fields')
+    }else{
 
-    emailjs
-      .sendForm("Your service ID", "Your template ID", form.current, {
-        publicKey: "Your public key",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          toast.success("Email Send Successfully");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          toast.error("Email Send Failed");
-        }
-      );
+      emailjs
+        .sendForm("service_261kg5j", "template_zmavhag", form.current, {
+          publicKey: "vZObjBnxYzLNKpHc2",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            toast.success("Email Send Successfully");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            toast.error("Email Send Failed");
+          }
+        );
+    }
+
   };
+
+  
   // ==================================EmailJS function ==============================//
   return (
     <div className='lg:p-[5rem] lg:pr-[5rem] px-[2rem] pb-[3rem] h-[100vh] bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1708534584/branding%20hopes/banner_b0pbcx.jpg")]  pt-[12vh] bg-cover bg-center bg-[#18252b] '>
@@ -37,33 +52,59 @@ const GetConsultant = () => {
         <p className="mt-[1.5rem] text-[20px] text-[#ffffff]">
           We have experts available to provide guidance for you.
         </p>
-        <div className="flex lg:flex-row flex-col mt-[2rem] gap-5 ">
-        
-            <input type="text" placeholder="Full Name" name="name"  className="p-[20px]"/>
-            <input type="email" placeholder="Email Address" name="email" className="p-[20px]" />
-            <input type="email" placeholder="Mobile Number" name="number" className="p-[20px]" />
-          
-        </div>
-        <div className="mt-[2rem] ">
-        <textarea
-        className="p-[15px]"
-            name="message"
-            id=""
-            cols="90"
-            rows="5"  
-            placeholder="Your Message"
-          // className="heading"
-
-          ></textarea>
-        </div>
-        <div className="right flex-1 flex justify-start items-center mt-[2rem]">
-          <button
-            onClick={sendEmail}
-            className="py-[17px] px-[39px]  bg-[#fdda0d]  hover:text-white font-bold hover:bg-[#097969]"
-          >
-            Submit
-          </button>
-        </div>
+        <form onSubmit={sendEmail} ref={form}>
+          <div className="flex lg:flex-row flex-col mt-[2rem] gap-5 ">
+            <input
+            onChange={(e)=> setName(e.target.value)}
+              type="text"
+              placeholder="Full Name"
+              name="name"
+              className="p-[20px]"
+            />
+            <input
+            onChange={(e)=> setEmail(e.target.value)}
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              className="p-[20px]"
+            />
+            <input
+            onChange={(e)=> setNumber(e.target.value)}
+              type="number"
+              name="mobile_number"
+              placeholder="Mobile Number"
+              // name="number"
+              className="p-[20px]"
+            />
+          </div>
+          <div className="mt-[2rem] ">
+            <textarea
+            onChange={(e)=> setMessage(e.target.value)}
+              className="p-[15px]"
+              name="message"
+              id=""
+              cols="40"
+              rows="5"
+              placeholder="Your Message"
+              // className="heading"
+            ></textarea>
+          </div>
+          <div className="right flex-1 flex justify-start items-center mt-[2rem]">
+          <input type="submit" value="Send" className="btn mb-[1rem] rounded-lg  py-[17px] px-[39px]  bg-[#fdda0d]  hover:text-white font-bold hover:bg-[#097969] cursor-pointer" />
+          </div>
+        </form>
+        <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition:Bounce />
       </div>
     </div>
   );
