@@ -39,13 +39,22 @@ const GetConsultant = () => {
         </p>
         <div className="flex lg:flex-row flex-col mt-[2rem] gap-5 ">
         
-            <input type="text" placeholder="Full Name" name="name"  className="p-[30px]"/>
-            <input type="email" placeholder="Email Address" name="email" />
-            <input type="email" placeholder="Mobile Number" name="number" />
+            <input type="text" placeholder="Full Name" name="name"  className="p-[20px]"/>
+            <input type="email" placeholder="Email Address" name="email" className="p-[20px]" />
+            <input type="email" placeholder="Mobile Number" name="number" className="p-[20px]" />
           
         </div>
-        <div className="mt-[2rem]">
-          {/* <TextareaCmp ref={form}/> */}
+        <div className="mt-[2rem] ">
+        <textarea
+        className="p-[15px]"
+            name="message"
+            id=""
+            cols="90"
+            rows="5"  
+            placeholder="Your Message"
+          // className="heading"
+
+          ></textarea>
         </div>
         <div className="right flex-1 flex justify-start items-center mt-[2rem]">
           <button
