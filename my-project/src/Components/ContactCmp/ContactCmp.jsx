@@ -7,27 +7,35 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ContactCmp = () => {
   const form = useRef();
+  const [email, setEmail] = useState()
+  const [number, setNumber] = useState()
+  const [message, setMessage] = useState()
+  const [name, setName] = useState()
+  const [subject, setSubject] = useState()
 
   // ==================================EmailJS function ==============================//
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm('Your service ID', 'Your template ID', form.current, {
-        publicKey: 'Your public key',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          toast.success("Email Send Successfully");
-
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          toast.error("Email Send Failed");
-        },
-      );
+    if (email === undefined || number === undefined || message === undefined || name === undefined || subject === undefined) {
+      return toast.error('Missings Fields')
+    } else {
+      console.log("send")
+      emailjs
+        .sendForm("service_or4rkcq", "template_2q5x5yd", form.current, {
+          publicKey: "IErOLB5UYKwIo5_Ux",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            toast.success("Email Send Successfully");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            toast.error("Email Send Failed");
+          }
+        );
+    }
   };
   // ==================================EmailJS function ==============================//
   return (
@@ -37,20 +45,21 @@ const ContactCmp = () => {
 
         <form action="" className="from" ref={form} onSubmit={sendEmail}>
           <div className="input-box">
-            <input type="text" placeholder="Full Name" name="name" />
-            <input type="email" placeholder="Email Address" name="email" />
+            <input type="text" placeholder="Full Name" name="name" onChange={(e) => setName(e.target.value)} />
+            <input type="email" placeholder="Email Address" name="email" onChange={(e) => setEmail(e.target.value)} />
           </div>
 
           <div className="input-box">
-            <input type="number" placeholder="Mobile Number" name="mobile_number" />
-            <input type="text" placeholder="Email Subject" name="subject" />
+            <input type="number" placeholder="Mobile Number" name="mobile_number" onChange={(e) => setNumber(e.target.value)} />
+            <input type="text" placeholder="Email Subject" name="subject" onChange={(e) => setSubject(e.target.value)} />
           </div>
           <textarea
             name="message"
             id=""
             cols="30"
-            rows="10"  
+            rows="10"
             placeholder="Your Message"
+            onChange={(e) => setMessage(e.target.value)}
           // className="heading"
 
           ></textarea>
