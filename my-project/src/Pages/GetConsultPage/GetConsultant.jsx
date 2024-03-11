@@ -4,16 +4,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const GetConsultant = () => {
   const form = useRef();
-  const [email, setEmail] = useState()
-  const [number, setNumber] = useState()
-  const [message, setMessage] = useState()
-  const [name, setName] = useState()
+  const [email, setEmail] = useState("" )
+  const [number, setNumber] = useState("" )
+  const [message, setMessage] = useState("" )
+  const [name, setName] = useState("" )
 
   // ==================================EmailJS function ==============================//
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (email === undefined || number === undefined || message === undefined || name === undefined) {
+    if (email === "" || number === "" || message === "" || name === "" ) {
       return toast.error('Missings Fields')
     } else {
       console.log("send")
