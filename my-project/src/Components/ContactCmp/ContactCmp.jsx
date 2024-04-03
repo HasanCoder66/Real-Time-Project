@@ -1,26 +1,32 @@
 import React, { useRef, useState } from "react";
 import "./ContactCmp.css";
 import MapLocation from "../MapLocation/MapLocation";
-import emailjs from "@emailjs/browser"
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactCmp = () => {
   const form = useRef();
-  const [email, setEmail] = useState("" )
-  const [number, setNumber] = useState("" )
-  const [message, setMessage] = useState("" )
-  const [name, setName] = useState("" )
-  const [subject, setSubject] = useState("" )
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
 
   // ==================================EmailJS function ==============================//
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (email === ""  || number === ""  || message === ""  || name === ""  || subject === "" ) {
-      return toast.error('Missings Fields')
+    if (
+      email === "" ||
+      number === "" ||
+      message === "" ||
+      name === "" ||
+      subject === ""
+    ) {
+      return toast.error("Missings Fields");
     } else {
-      console.log("send")
+      console.log("send");
       emailjs
         .sendForm("service_or4rkcq", "template_2q5x5yd", form.current, {
           publicKey: "IErOLB5UYKwIo5_Ux",
@@ -45,13 +51,33 @@ const ContactCmp = () => {
 
         <form action="" className="from" ref={form} onSubmit={sendEmail}>
           <div className="input-box">
-            <input type="text" placeholder="Full Name" name="name" onChange={(e) => setName(e.target.value)} />
-            <input type="email" placeholder="Email Address" name="email" onChange={(e) => setEmail(e.target.value)} />
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="name"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
 
           <div className="input-box">
-            <input type="number" placeholder="Mobile Number" name="mobile_number" onChange={(e) => setNumber(e.target.value)} />
-            <input type="text" placeholder="Email Subject" name="subject" onChange={(e) => setSubject(e.target.value)} />
+            <input
+              type="number"
+              placeholder="Mobile Number"
+              name="mobile_number"
+              onChange={(e) => setNumber(e.target.value)}
+            />
+            <input
+              type="text"
+              placeholder="Email Subject"
+              name="subject"
+              onChange={(e) => setSubject(e.target.value)}
+            />
           </div>
           <textarea
             name="message"
@@ -60,10 +86,13 @@ const ContactCmp = () => {
             rows="10"
             placeholder="Your Message"
             onChange={(e) => setMessage(e.target.value)}
-          // className="heading"
-
+            // className="heading"
           ></textarea>
-          <input type="submit" value="Send" className="btn mb-[1rem] text-white text-2xl hover:bg-[#fdda0d] w-[100%] h-[10vh] rounded-lg" />
+          <input
+            type="submit"
+            value="Send"
+            className="btn mb-[1rem] text-white text-2xl hover:bg-[#fdda0d] w-[100%] h-[10vh] rounded-lg"
+          />
         </form>
       </div>
       <ToastContainer
@@ -77,7 +106,8 @@ const ContactCmp = () => {
         draggable
         pauseOnHover
         theme="light"
-        transition:Bounce />
+        transition:Bounce
+      />
       <div className=" bg-[#097969] text-center  flex justify-center items-center">
         <div>
           <h2 className="text-3xl font-bold uppercase text-white mb-[2rem]">
